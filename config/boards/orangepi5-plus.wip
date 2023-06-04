@@ -16,7 +16,7 @@ SKIP_BOOTSPLASH="yes" # Skip boot splash patch, conflicts with CONFIG_VT=yes
 BOOTFS_TYPE="ext4"
 
 
-function post_family_tweaks__orangepi5_naming_audios() {
+function post_family_tweaks__orangepi5plus_naming_audios() {
 	display_alert "$BOARD" "Renaming orangepi5 audios" "info"
 
 	mkdir -p $SDCARD/etc/udev/rules.d/
@@ -28,7 +28,7 @@ function post_family_tweaks__orangepi5_naming_audios() {
 }
 
 # Override family config for this board; let's avoid conditionals in family config.
-function post_family_config__orangepi5_use_vendor_uboot() {
+function post_family_config__orangepi5plus_use_vendor_uboot() {
 	BOOTSOURCE='https://github.com/orangepi-xunlong/u-boot-orangepi.git'
 	BOOTBRANCH='branch:v2017.09-rk3588'
 	BOOTPATCHDIR="legacy"
