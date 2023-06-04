@@ -38,6 +38,7 @@ function post_family_config__orangepi5plus_use_vendor_uboot() {
 function post_family_config__orangepi5plus_use_vendor_kernel() {
 	KERNELSOURCE='https://github.com/ggg17226/linux-orangepi.git'
 	KERNELBRANCH='branch:update-5p'
+	KERNELPATCHDIR='rockchip-rk3588-orangepi-legacy'
 }
 
 
