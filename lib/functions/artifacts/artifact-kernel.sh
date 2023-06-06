@@ -23,12 +23,6 @@ function artifact_kernel_config_dump() {
 # It is OK to reach out to the internet for a curl or ls-remote, but not for a git clone, but
 # you *must* _cache_ results on disk @TODO with a TTL determined by live code, not preset in cached entries.
 function artifact_kernel_prepare_version() {
-  # force to build locally
-  artifact_name="kernel-${LINUXFAMILY}-${BRANCH}"
-	artifact_version="undetermined"        # outer scope
-	artifact_version_reason="undetermined" # outer scope
-	artifact_type="deb-tar" # this triggers processing of .deb files in the maps to produce a tarball
-  return 0
 
 	artifact_version="undetermined"        # outer scope
 	artifact_version_reason="undetermined" # outer scope
