@@ -25,7 +25,7 @@ function artifact_kernel_config_dump() {
 function artifact_kernel_prepare_version() {
   # force to build locally
 
-  return 1
+  return 0
 
 	artifact_version="undetermined"        # outer scope
 	artifact_version_reason="undetermined" # outer scope
