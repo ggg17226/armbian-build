@@ -23,6 +23,10 @@ function artifact_kernel_config_dump() {
 # It is OK to reach out to the internet for a curl or ls-remote, but not for a git clone, but
 # you *must* _cache_ results on disk @TODO with a TTL determined by live code, not preset in cached entries.
 function artifact_kernel_prepare_version() {
+  # force to build locally
+
+  return 1
+
 	artifact_version="undetermined"        # outer scope
 	artifact_version_reason="undetermined" # outer scope
 	[[ -z "${artifact_prefix_version}" ]] && exit_with_error "artifact_prefix_version is not set"
