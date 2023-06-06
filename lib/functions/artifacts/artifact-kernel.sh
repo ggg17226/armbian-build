@@ -25,7 +25,8 @@ function artifact_kernel_config_dump() {
 function artifact_kernel_prepare_version() {
   # force to build locally
   artifact_name="kernel-${LINUXFAMILY}-${BRANCH}"
-  artifact_type="deb-tar" # this triggers processing of .deb files in the maps to produce a tarball
+	artifact_version="undetermined"        # outer scope
+	artifact_version_reason="undetermined" # outer scope
   return 0
 
 	artifact_version="undetermined"        # outer scope
