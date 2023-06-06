@@ -35,6 +35,6 @@ function post_family_config__orangepi5plus_use_vendor_uboot() {
 }
 # Override kernel family config for this board; let's avoid conditionals in family config.
 function post_family_config__orangepi5plus_use_vendor_kernel() {
-	KERNELSOURCE='https://github.com/ggg17226/linux-rockchip.git'
-	KERNELBRANCH='branch:add-opi5p'
+	KERNELSOURCE='https://github.com/Joshua-Riek/linux-rockchip.git'
+	KERNELBRANCH='branch:patch-4'
 }
