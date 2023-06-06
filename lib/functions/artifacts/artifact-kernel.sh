@@ -27,6 +27,7 @@ function artifact_kernel_prepare_version() {
   artifact_name="kernel-${LINUXFAMILY}-${BRANCH}"
 	artifact_version="undetermined"        # outer scope
 	artifact_version_reason="undetermined" # outer scope
+	artifact_type="deb-tar" # this triggers processing of .deb files in the maps to produce a tarball
   return 0
 
 	artifact_version="undetermined"        # outer scope
