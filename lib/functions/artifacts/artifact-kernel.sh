@@ -24,7 +24,7 @@ function artifact_kernel_config_dump() {
 # you *must* _cache_ results on disk @TODO with a TTL determined by live code, not preset in cached entries.
 function artifact_kernel_prepare_version() {
   # force to build locally
-
+  artifact_name="kernel-${LINUXFAMILY}-${BRANCH}"
   return 0
 
 	artifact_version="undetermined"        # outer scope
